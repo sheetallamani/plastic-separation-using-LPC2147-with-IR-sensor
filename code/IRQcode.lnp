@@ -1,0 +1,4 @@
+--device DARMP "startup.o" "irqori.o" --library_type=microlib --strict --scatter "IRQcode.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\IRQcode.map" -o "IRQcode.axf"

@@ -1,0 +1,222 @@
+ARM Linker, RVCT4.0 [Build 524] for uVision [Evaluation]
+
+==============================================================================
+
+Section Cross References
+
+    startup.o(RESET) refers to startup.o(STACK) for Stack_Top
+    startup.o(RESET) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    irqori.o(.text) refers to irqori.o(.data) for clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7.o(.ARM.Collect$$$$00000007) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup.o(STACK) for __initial_sp
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry7.o(.ARM.Collect$$$$00000007) refers to irqori.o(.text) for main
+    init.o(.text) refers to init.o(i.__ARM_common_call_via_r3) for __ARM_common_call_via_r3
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup.o(HEAP), (0 bytes).
+
+1 unused section(s) (total 0 bytes) removed from the image.
+
+==============================================================================
+
+Adding Veneers to the image
+
+    Adding AT veneer (8 bytes, Inline) for call to '__scatterload' from entry5.o(.ARM.Collect$$$$00000004).
+    Adding TA veneer (8 bytes, Short) for call to '__main_after_scatterload' from init.o(.text).
+
+2 Veneer(s) (total 16 bytes) added to the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      264  startup.o(RESET)
+    ../../microlib/init/entry.s              0x00000000   Number         0  entry.o ABSOLUTE
+    ../../microlib/init/entry.s              0x00000000   Number         0  entry2.o ABSOLUTE
+    ../../microlib/init/entry.s              0x00000000   Number         0  entry5.o ABSOLUTE
+    ../../microlib/init/entry.s              0x00000000   Number         0  entry7.o ABSOLUTE
+    IRQori.c                                 0x00000000   Number         0  irqori.o ABSOLUTE
+    Startup.s                                0x00000000   Number         0  startup.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    Undef_Handler                            0x00000040   ARM Code       4  startup.o(RESET)
+    SWI_Handler                              0x00000044   ARM Code       4  startup.o(RESET)
+    PAbt_Handler                             0x00000048   ARM Code       4  startup.o(RESET)
+    DAbt_Handler                             0x0000004c   ARM Code       4  startup.o(RESET)
+    IRQ_Handler                              0x00000050   ARM Code       4  startup.o(RESET)
+    FIQ_Handler                              0x00000054   ARM Code       4  startup.o(RESET)
+    .ARM.Collect$$$$00000000                 0x00000108   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x00000108   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x0000010c   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000007                 0x00000110   Section       12  entry7.o(.ARM.Collect$$$$00000007)
+    .ARM.Collect$$$$00002712                 0x0000011c   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x0000011c   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x00000120   Section     2200  irqori.o(.text)
+    .text                                    0x000009c0   Section       32  init.o(.text)
+    i.__ARM_common_call_via_r3               0x000009e8   Section        2  init.o(i.__ARM_common_call_via_r3)
+    i.__scatterload_copy                     0x000009ec   Section       24  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00000a04   Section        4  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00000a08   Section       24  handlers.o(i.__scatterload_zeroinit)
+    .data                                    0x40000000   Section      128  irqori.o(.data)
+    STACK                                    0x40000080   Section     1160  startup.o(STACK)
+    Stack_Top                                0x40000508   Data           0  startup.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv1$ARM_ISAv4$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  irqori.o ABSOLUTE
+    __decompress                              - Undefined Weak Reference
+    Reset_Handler                            0x00000058   ARM Code       0  startup.o(RESET)
+    __main                                   0x00000108   ARM Code       0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00000108   ARM Code       0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x0000010c   ARM Code       0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x00000110   ARM Code       0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_init                               0x00000110   ARM Code       0  entry7.o(.ARM.Collect$$$$00000007)
+    delay                                    0x00000120   ARM Code      24  irqori.o(.text)
+    delayA                                   0x00000138   ARM Code      48  irqori.o(.text)
+    clockwise                                0x00000168   ARM Code     288  irqori.o(.text)
+    anticlockwise                            0x00000288   ARM Code     288  irqori.o(.text)
+    delayB                                   0x000003a8   ARM Code      28  irqori.o(.text)
+    delay1                                   0x000003c4   ARM Code      28  irqori.o(.text)
+    cmd                                      0x000003e0   ARM Code     164  irqori.o(.text)
+    extint0_ISR                              0x00000484   ARM Code     720  irqori.o(.text)
+    main                                     0x00000754   ARM Code      64  irqori.o(.text)
+    data                                     0x00000794   ARM Code     164  irqori.o(.text)
+    function                                 0x00000838   ARM Code     308  irqori.o(.text)
+    Inline ARM to Thumb Veneer to __scatterload 0x000009b8   ARM Code       8  init.o(.text)
+    __scatterload                            0x000009c1   Thumb Code    24  init.o(.text)
+    __scatterload_rt2                        0x000009c1   Thumb Code     0  init.o(.text)
+    Short Thumb to ARM Veneer to __main_after_scatterload 0x000009e1   Thumb Code     8  anon$$obj.o(Veneer$$Code)
+    __ARM_common_call_via_r3                 0x000009e9   Thumb Code     2  init.o(i.__ARM_common_call_via_r3)
+    __scatterload_copy                       0x000009ec   ARM Code      24  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00000a04   ARM Code       4  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00000a08   ARM Code      24  handlers.o(i.__scatterload_zeroinit)
+    Region$$Table$$Base                      0x00000a20   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00000a40   Number         0  anon$$obj.o(Region$$Table)
+    msg                                      0x40000000   Data           7  irqori.o(.data)
+    c                                        0x40000008   Data          36  irqori.o(.data)
+    clock                                    0x4000002c   Data          16  irqori.o(.data)
+    anticlock                                0x4000003c   Data          16  irqori.o(.data)
+    clock1                                   0x4000004c   Data          16  irqori.o(.data)
+    anticlock1                               0x4000005c   Data          16  irqori.o(.data)
+    k                                        0x4000006c   Data           4  irqori.o(.data)
+    i                                        0x40000070   Data           4  irqori.o(.data)
+    m                                        0x40000074   Data           4  irqori.o(.data)
+    var1                                     0x40000078   Data           4  irqori.o(.data)
+    var2                                     0x4000007c   Data           4  irqori.o(.data)
+    __initial_sp                             0x40000480   Data         136  startup.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000108
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00000ac0, Max: 0x00080000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00000a40, Max: 0x00080000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000108   Code   RO            3    RESET               startup.o
+    0x00000108   0x00000000   Code   RO           31  * .ARM.Collect$$$$00000000  entry.o(mc_t.l)
+    0x00000108   0x00000004   Code   RO           34    .ARM.Collect$$$$00000001  entry2.o(mc_t.l)
+    0x0000010c   0x00000004   Code   RO           36    .ARM.Collect$$$$00000004  entry5.o(mc_t.l)
+    0x00000110   0x0000000c   Code   RO           37    .ARM.Collect$$$$00000007  entry7.o(mc_t.l)
+    0x0000011c   0x00000004   Code   RO           35    .ARM.Collect$$$$00002712  entry2.o(mc_t.l)
+    0x00000120   0x00000898   Code   RO            8    .text               irqori.o
+    0x000009b8   0x00000008   Ven    RO           38    .text               init.o(mc_t.l)
+    0x000009c0   0x00000020   Code   RO           38    .text               init.o(mc_t.l)
+    0x000009e0   0x00000008   Ven    RO           51    Veneer$$Code        anon$$obj.o
+    0x000009e8   0x00000002   Code   RO           40    i.__ARM_common_call_via_r3  init.o(mc_t.l)
+    0x000009ea   0x00000002   PAD
+    0x000009ec   0x00000018   Code   RO           44    i.__scatterload_copy  handlers.o(mc_t.l)
+    0x00000a04   0x00000004   Code   RO           45    i.__scatterload_null  handlers.o(mc_t.l)
+    0x00000a08   0x00000018   Code   RO           46    i.__scatterload_zeroinit  handlers.o(mc_t.l)
+    0x00000a20   0x00000020   Data   RO           42    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x40000000, Size: 0x00000508, Max: 0x00008000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x40000000   0x00000080   Data   RW            9    .data               irqori.o
+    0x40000080   0x00000488   Zero   RW            1    STACK               startup.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      2200         76          0        128          0       5590   irqori.o
+       264         48          0          0       1160        296   startup.o
+
+    ----------------------------------------------------------------------
+      2472        124         32        128       1160       5886   Object Totals
+         8          0         32          0          0          0   (incl. Generated)
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+        12          4          0          0          0          0   entry7.o
+        52          0          0          0          0          0   handlers.o
+        42          8          0          0          0        136   init.o
+
+    ----------------------------------------------------------------------
+       120         16          0          0          0        136   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       118         16          0          0          0        136   mc_t.l
+
+    ----------------------------------------------------------------------
+       120         16          0          0          0        136   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      2592        140         32        128       1160       5972   Grand Totals
+      2592        140         32        128       1160       5972   ELF Image Totals
+      2592        140         32        128          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 2624 (   2.56kB)
+    Total RW  Size (RW Data + ZI Data)              1288 (   1.26kB)
+    Total ROM Size (Code + RO Data + RW Data)       2752 (   2.69kB)
+
+==============================================================================
+
