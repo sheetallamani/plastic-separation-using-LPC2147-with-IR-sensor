@@ -1,5 +1,8 @@
 # Waste Management System for Plastic Sorting
+## Hard Plastic
 ![GitHub Logo](https://github.com/sheetallamani/plastic-separation-using-LPC2147-with-IR-sensor/blob/main/vidoe/20231114_022109.gif?raw=true)
+## Transparent Plastic
+![GitHub Logo](https://github.com/sheetallamani/plastic-separation-using-LPC2147-with-IR-sensor/blob/main/vidoe/20231114_022648.gif?raw=true)
 
 ## Overview
 
