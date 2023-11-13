@@ -1,5 +1,5 @@
 # Waste Management System for Plastic Sorting
-![GitHub Logo](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-IpujfeUwiUnjLx0N3qtcUG_ABYywgsQKawxBiOX3uCaHJcqDrCbR8lxtfFkPyv4-PZJhej7NKgMohq9Xai9Y_XKoIArgW1W8PjKDqnl4baox2Pr6H9YKW4DLTztSjBdydaVfcrvuiD0HMpuk8LXYB5sGikFJLucJTI_PtayCTMjEX3jaIn1Flmv_6eA/s854/Video.gif)
+![GitHub Logo](https://github.com/sheetallamani/plastic-separation-using-LPC2147-with-IR-sensor/blob/main/vidoe/20231114_022109.gif?raw=true)
 
 ## Overview
 
