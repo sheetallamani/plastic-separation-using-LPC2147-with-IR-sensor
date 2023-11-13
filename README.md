@@ -1,4 +1,5 @@
 # Waste Management System for Plastic Sorting
+![GitHub Logo](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-IpujfeUwiUnjLx0N3qtcUG_ABYywgsQKawxBiOX3uCaHJcqDrCbR8lxtfFkPyv4-PZJhej7NKgMohq9Xai9Y_XKoIArgW1W8PjKDqnl4baox2Pr6H9YKW4DLTztSjBdydaVfcrvuiD0HMpuk8LXYB5sGikFJLucJTI_PtayCTMjEX3jaIn1Flmv_6eA/s854/Video.gif)
 
 ## Overview
 
@@ -19,9 +20,12 @@ This project is a waste management system designed to automate the sorting of pl
 ## Hardware Components
 
 1. Conveyor Belt System
-2. Plastic Identification System (Sensors or Cameras)
-3. Robotic Arms
+2. Plastic Identification System (IR-Sensors)
+3. Contener
 4. Microcontroller/Embedded System (LPC2148 Microcontroller, etc.)
+5. 12V Power supply
+6. Stepper Motors
+7. Connecting Wires
 
 ## Software Components
 
