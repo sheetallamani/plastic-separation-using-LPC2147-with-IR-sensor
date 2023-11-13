@@ -1,5 +1,4 @@
 # Waste Management System for Plastic Sorting
-![Relative Image](https://drive.google.com/file/d/1BXp7ovYQJl_bEnFruf-e6G48tU5PfGr7/view?usp=drive_link)
 
 ## Overview
 
