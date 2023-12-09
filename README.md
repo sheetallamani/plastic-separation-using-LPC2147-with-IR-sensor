@@ -11,7 +11,7 @@ This project is a waste management system designed to automate the sorting of pl
 ## Features
 
 - Conveyor belt system for transporting municipal waste.
-- Plastic identification system using sensors or cameras.
+- Plastic identification system using IR sensor.
 - Robotic arms for sorting plastics into different bins.
 - Microcontroller/Embedded system for hardware control.
 - Communication module for real-time monitoring and control.
